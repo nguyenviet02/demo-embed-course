@@ -159,17 +159,19 @@ export default function DeckPageClient({
   if (content) {
     const course = deckToCourse(deck, content);
     return (
-      <SlideViewer
-        course={course}
-        onExit={handleExit}
-        narrationEnabled={narrationEnabled && hasNarrationForLang}
-        onNarrationToggle={setNarrationEnabled}
-        audioBasePath={
-          hasNarrationForLang
-            ? `${deck.narration?.audioBasePath}/${currentLang}`
-            : undefined
-        }
-      />
+      <>
+        <SlideViewer
+          course={course}
+          onExit={handleExit}
+          narrationEnabled={narrationEnabled && hasNarrationForLang}
+          onNarrationToggle={setNarrationEnabled}
+          audioBasePath={
+            hasNarrationForLang
+              ? `${deck.narration?.audioBasePath}/${currentLang}`
+              : undefined
+          }
+        />
+      </>
     );
   }
 

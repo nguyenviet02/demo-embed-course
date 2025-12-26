@@ -1,14 +1,14 @@
-import { DeckContent } from '../../../types';
+import { DeckContent } from "../../../types";
 
 export const digestyIntroEn: DeckContent = {
-    language: 'en',
-    slides: [
-        {
-            id: 'cover',
-            layout: 'cover',
-            theme: 'brand',
-            showBadge: false,
-            title: `
+  language: "en",
+  slides: [
+    {
+      id: "cover",
+      layout: "cover",
+      theme: "brand",
+      showBadge: false,
+      title: `
                 <div class="relative inline-block mt-10 md:mt-16 z-20">
                     <!-- Main Title: DIGESTY STREET -->
                     <div class="text-5xl md:text-7xl font-black mb-8 flex justify-center gap-2" style="text-shadow: 0 4px 0 rgba(0,0,0,0.5);">
@@ -36,9 +36,9 @@ export const digestyIntroEn: DeckContent = {
                     </div>
                 </div>
             `,
-            subtitle: 'DIGESTY LEARNING',
-            blocks: [],
-            content: `
+      subtitle: "DIGESTY LEARNING",
+      blocks: [],
+      content: `
                 <!-- Top Header: Logo (Scale bumped 5x) -->
                 <div class="fixed top-4 md:top-8 left-0 right-0 z-[100] flex flex-col items-center gap-3 pointer-events-none">
                     <a href="https://digesty.vn" target="_blank" class="pointer-events-auto hover:scale-105 transition-transform duration-300">
@@ -104,16 +104,16 @@ export const digestyIntroEn: DeckContent = {
                     </button>
                 </div>
             `,
-            nextItems: ['.btn-explore'],
-            customTransition: { type: 'zoom-in' },
-        },
-        {
-            id: 'contrast',
-            layout: 'cover',
-            theme: 'dark',
-            imageUrl: '/assets/ai_street_market_contrast.png',
-            showBadge: false,
-            title: `
+      nextItems: [".btn-explore"],
+      customTransition: { type: "zoom-in" },
+    },
+    {
+      id: "contrast",
+      layout: "cover",
+      theme: "dark",
+      imageUrl: "/assets/ai_street_market_contrast.png",
+      showBadge: false,
+      title: `
                 <!-- Container for custom split layout with Robust Centering -->
                 <div class="relative w-screen -ml-[calc(50vw-50%)] flex flex-col items-center">
                     <div class="w-[90vw] max-w-[1400px] flex flex-col items-center">
@@ -159,59 +159,59 @@ export const digestyIntroEn: DeckContent = {
                     </div>
                 </div>
             `,
-            blocks: [],
-        },
+      blocks: [],
+    },
+    {
+      id: "problem-updated",
+      layout: "three-column",
+      theme: "dark",
+      showBadge: false,
+      title: `<h1 class="text-5xl font-black text-center mb-12 tracking-tight bg-gradient-to-r from-red-400 via-white to-blue-400 text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]">3 Key Barriers</h1>`,
+      columns: [
         {
-            id: 'problem-updated',
-            layout: 'three-column',
-            theme: 'dark',
-            showBadge: false,
-            title: `<h1 class="text-5xl font-black text-center mb-12 tracking-tight bg-gradient-to-r from-red-400 via-white to-blue-400 text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]">3 Key Barriers</h1>`,
-            columns: [
-                {
-                    icon: '/assets/neon_keyboard.png',
-                    entity: 'AI Chatbot',
-                    title: 'Blank Screen Paralysis',
-                    content: `
+          icon: "/assets/neon_keyboard.png",
+          entity: "AI Chatbot",
+          title: "Blank Screen Paralysis",
+          content: `
                         <div class="space-y-4">
                             <div class="bg-gray-800/30 p-3 rounded-lg border border-gray-700/50">
                                 <p class="text-gray-300 text-sm">Must <strong class="text-white">think hard</strong>. Must <strong class="text-white">type</strong>. Must <strong class="text-white">read</strong> walls of text.</p>
                             </div>
                         </div>
                     `,
-                    color: 'text-gray-100',
-                },
-                {
-                    icon: '/assets/neon_maze.png',
-                    entity: 'Scattered AI Apps',
-                    title: 'Choice Overload',
-                    content: `
+          color: "text-gray-100",
+        },
+        {
+          icon: "/assets/neon_maze.png",
+          entity: "Scattered AI Apps",
+          title: "Choice Overload",
+          content: `
                         <div class="space-y-4">
                             <div class="bg-gray-800/30 p-3 rounded-lg border border-gray-700/50">
                                 <p class="text-gray-300 text-sm"><strong class="text-white">Fragmented</strong>. <strong class="text-white">Too many apps</strong>. <strong class="text-white">Mixed quality</strong>.</p>
                             </div>
                         </div>
                     `,
-                    color: 'text-gray-100',
-                },
-                {
-                    icon: '/assets/neon_lantern.png',
-                    entity: 'Foreign AI',
-                    title: 'Cultural Gap',
-                    content: `
+          color: "text-gray-100",
+        },
+        {
+          icon: "/assets/neon_lantern.png",
+          entity: "Foreign AI",
+          title: "Cultural Gap",
+          content: `
                         <div class="space-y-4">
                             <div class="bg-gray-800/30 p-3 rounded-lg border border-gray-700/50">
                                 <p class="text-gray-300 text-sm"><strong class="text-white">Too foreign</strong>. <strong class="text-white">Out of touch</strong>. <strong class="text-white">Missing local context</strong>.</p>
                             </div>
                         </div>
                     `,
-                    color: 'text-gray-100',
-                }
-            ],
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          color: "text-gray-100",
+        },
+      ],
+      blocks: [
+        {
+          type: "html",
+          content: `
                         <div class="flex flex-col items-center animate-fade-in-up delay-500">
                             <!-- Connector -->
                             <div class="flex flex-col items-center mb-4 opacity-60">
@@ -240,28 +240,28 @@ export const digestyIntroEn: DeckContent = {
                                 </div>
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "reveal",
+      layout: "reveal",
+      theme: "dark",
+      imageUrl: "/assets/digesty_street.jpg",
+      title: `<div class="flex flex-col items-center gap-6"><span class="text-2xl md:text-4xl font-light tracking-[0.5em] text-cyan-100/90 uppercase drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">Introducing</span><img src="/assets/digesty-logo-white-trimmed.webp" alt="Digesty" class="w-[80vw] max-w-3xl h-auto drop-shadow-[0_0_35px_rgba(34,211,238,0.5)] animate-pulse" /></div>`,
+      content: "",
+      blocks: [],
+    },
+    {
+      id: "ecosystem",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      blocks: [
         {
-            id: 'reveal',
-            layout: 'reveal',
-            theme: 'dark',
-            imageUrl: '/assets/digesty_street.jpg',
-            title: `<div class="flex flex-col items-center gap-6"><span class="text-2xl md:text-4xl font-light tracking-[0.5em] text-cyan-100/90 uppercase drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">Introducing</span><img src="/assets/digesty-logo-white-trimmed.webp" alt="Digesty" class="w-[80vw] max-w-3xl h-auto drop-shadow-[0_0_35px_rgba(34,211,238,0.5)] animate-pulse" /></div>`,
-            content: '',
-            blocks: [],
-        },
-        {
-            id: 'ecosystem',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1400px] -mt-8">
                             <!-- Header -->
                             <h2 class="text-4xl md:text-6xl font-black text-center mb-12 uppercase tracking-tight">
@@ -392,49 +392,49 @@ export const digestyIntroEn: DeckContent = {
                             </div>
 
                         </div>
-                    `
-                },
-            ],
+                    `,
+        },
+      ],
+    },
+    {
+      id: "product-showcase",
+      layout: "carousel-3d",
+      theme: "dark",
+      showBadge: false,
+      title: "TAP. SWIPE. FEEL.",
+      carouselItems: [
+        {
+          title: "Digesty Home",
+          desc: "All AI tools in one place.",
+          icon: "🌐",
+          imageUrl: "/assets/digesty_rewind_showcase.png",
+          color: "bg-cyan-900/80",
         },
         {
-            id: 'product-showcase',
-            layout: 'carousel-3d',
-            theme: 'dark',
-            showBadge: false,
-            title: 'TAP. SWIPE. FEEL.',
-            carouselItems: [
-                {
-                    title: 'Digesty Home',
-                    desc: 'All AI tools in one place.',
-                    icon: '🌐',
-                    imageUrl: '/assets/digesty_rewind_showcase.png',
-                    color: 'bg-cyan-900/80',
-                },
-                {
-                    title: 'Photo Studio',
-                    desc: 'AI-powered art photography.',
-                    icon: '📸',
-                    imageUrl: '/assets/digesty_avatar_studio.png',
-                    color: 'bg-indigo-900/80',
-                },
-                {
-                    title: 'Tarot Oracle',
-                    desc: 'Decode cosmic mysteries.',
-                    icon: '🔮',
-                    imageUrl: '/assets/digesty_tarot.png',
-                    color: 'bg-purple-900/80',
-                },
-            ],
+          title: "Photo Studio",
+          desc: "AI-powered art photography.",
+          icon: "📸",
+          imageUrl: "/assets/digesty_avatar_studio.png",
+          color: "bg-indigo-900/80",
         },
         {
-            id: 'growth-flywheel',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          title: "Tarot Oracle",
+          desc: "Decode cosmic mysteries.",
+          icon: "🔮",
+          imageUrl: "/assets/digesty_tarot.png",
+          color: "bg-purple-900/80",
+        },
+      ],
+    },
+    {
+      id: "growth-flywheel",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      blocks: [
+        {
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                             <!-- Header -->
                             <h2 class="text-4xl md:text-6xl font-black text-center mb-16 uppercase tracking-tight">
@@ -511,19 +511,19 @@ export const digestyIntroEn: DeckContent = {
                                 </p>
                             </div>
                         </div>
-                    `
-                },
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "tech-core",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      blocks: [
         {
-            id: 'tech-core',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                             <h2 class="text-4xl md:text-6xl font-black text-center mb-12 uppercase tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-cyan-200 to-purple-400 drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]">
                                 TECH & DATA
@@ -618,19 +618,19 @@ export const digestyIntroEn: DeckContent = {
 
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "roadmap-vision",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      blocks: [
         {
-            id: 'roadmap-vision',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                             <h2 class="text-3xl md:text-5xl font-black text-center mb-16 uppercase tracking-tight">
                                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-blue-400 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
@@ -689,19 +689,19 @@ export const digestyIntroEn: DeckContent = {
                                 </p>
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "team-company",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      blocks: [
         {
-            id: 'team-company',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                              <!-- Header -->
                             <h2 class="text-3xl md:text-5xl font-black text-center mb-16 uppercase tracking-tight text-white/90">
@@ -802,19 +802,19 @@ export const digestyIntroEn: DeckContent = {
 
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "contact",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      blocks: [
         {
-            id: 'contact',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1000px] flex flex-col items-center text-center">
 
                             <!-- Main Call to Action -->
@@ -873,23 +873,27 @@ export const digestyIntroEn: DeckContent = {
                                 © 2025 Icetea AI & Robotics
                             </div>
 
+                            <button id="submitCourse" class="mt-16 text-sm font-bold text-white tracking-[0.3em] uppercase border border-white/10 px-6 py-2 rounded-full cursor-pointer">
+                                Submit Course
+                            </button>
+
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
-    ],
+      ],
+    },
+  ],
 };
 
 export const digestyIntroVi: DeckContent = {
-    language: 'vi',
-    slides: [
-        {
-            id: 'cover',
-            layout: 'cover',
-            theme: 'brand',
-            showBadge: false,
-            title: `
+  language: "vi",
+  slides: [
+    {
+      id: "cover",
+      layout: "cover",
+      theme: "brand",
+      showBadge: false,
+      title: `
                 <div class="relative inline-block mt-10 md:mt-16 z-20">
                     <!-- Main Title: PHỐ AI -->
                     <div class="text-6xl md:text-8xl font-black mb-8 flex justify-center gap-2" style="text-shadow: 0 4px 0 rgba(0,0,0,0.5);">
@@ -909,9 +913,9 @@ export const digestyIntroVi: DeckContent = {
                     </div>
                 </div>
             `,
-            subtitle: 'DIGESTY LEARNING',
-            blocks: [],
-            content: `
+      subtitle: "DIGESTY LEARNING",
+      blocks: [],
+      content: `
                 <!-- Top Header: Logo (Scale bumped 5x) -->
                 <div class="fixed top-4 md:top-8 left-0 right-0 z-[100] flex flex-col items-center gap-3 pointer-events-none">
                     <a href="https://digesty.vn" target="_blank" class="pointer-events-auto hover:scale-105 transition-transform duration-300">
@@ -977,18 +981,20 @@ export const digestyIntroVi: DeckContent = {
                     </button>
                 </div>
             `,
-            nextItems: ['.btn-explore'],
-            customTransition: { type: 'zoom-in' },
-            narration: 'Xin chào. Tôi là nhà sáng lập của Digesty - Phố AI Đa Trải Nghiệm. Tôi tạo bài thuyết trình này bằng chính ứng dụng Digesty. Để tôi kể cho bạn nghe câu chuyện... về cách chúng tôi đang thay đổi trải nghiệm AI tại Việt Nam.',
-        },
-        {
-            id: 'contrast',
-            layout: 'cover',
-            theme: 'dark',
-            imageUrl: '/assets/ai_street_market_contrast.png',
-            showBadge: false,
-            narration: 'Như bạn biết, hầu hết mọi người tiếp cận AI qua chatbot - như ChatGPT hoặc Gemini. Đây là những công cụ cách mạng, nhưng chúng không phù hợp cho mọi trường hợp. Chúng giống như những thư viện lớn, chứa mọi kiến thức, nhưng tĩnh lặng. Bạn độc thoại với ô nhập liệu, và không những phải biết mình muốn gì mà còn phải biết cách diễn đạt nó hiệu quả. Ở chiều ngược lại, phố Digesty mang đến một trải nghiệm hoàn toàn khác - nơi bạn có thể nhìn ngắm, cảm nhận, và lựa chọn. Bạn được phục vụ. Trực quan. Thoải mái. Và dễ dàng.',
-            title: `
+      nextItems: [".btn-explore"],
+      customTransition: { type: "zoom-in" },
+      narration:
+        "Xin chào. Tôi là nhà sáng lập của Digesty - Phố AI Đa Trải Nghiệm. Tôi tạo bài thuyết trình này bằng chính ứng dụng Digesty. Để tôi kể cho bạn nghe câu chuyện... về cách chúng tôi đang thay đổi trải nghiệm AI tại Việt Nam.",
+    },
+    {
+      id: "contrast",
+      layout: "cover",
+      theme: "dark",
+      imageUrl: "/assets/ai_street_market_contrast.png",
+      showBadge: false,
+      narration:
+        "Như bạn biết, hầu hết mọi người tiếp cận AI qua chatbot - như ChatGPT hoặc Gemini. Đây là những công cụ cách mạng, nhưng chúng không phù hợp cho mọi trường hợp. Chúng giống như những thư viện lớn, chứa mọi kiến thức, nhưng tĩnh lặng. Bạn độc thoại với ô nhập liệu, và không những phải biết mình muốn gì mà còn phải biết cách diễn đạt nó hiệu quả. Ở chiều ngược lại, phố Digesty mang đến một trải nghiệm hoàn toàn khác - nơi bạn có thể nhìn ngắm, cảm nhận, và lựa chọn. Bạn được phục vụ. Trực quan. Thoải mái. Và dễ dàng.",
+      title: `
                 <!-- Container for custom split layout with Robust Centering -->
                 <div class="relative w-screen -ml-[calc(50vw-50%)] flex flex-col items-center">
                     <div class="w-[90vw] max-w-[1400px] flex flex-col items-center">
@@ -1034,21 +1040,22 @@ export const digestyIntroVi: DeckContent = {
                     </div>
                 </div>
             `,
-            blocks: [],
-        },
+      blocks: [],
+    },
+    {
+      id: "problem-updated",
+      layout: "three-column",
+      theme: "dark",
+      showBadge: false, // Explicitly hide badge
+      narration:
+        'Để tôi nói thẳng. AI hiện tại có ba vấn đề lớn. Một, nó bắt bạn phải nghĩ trước khi hỏi - cái gọi là "gánh nặng màn hình trắng". Hai, quá nhiều ứng dụng lẻ tẻ, mỗi thứ một nơi, không ai nói chuyện với ai. Và ba, quan trọng nhất - nó quá Tây. Nó không hiểu văn hóa của chúng ta. Digesty ra đời để giải quyết cả ba điều đó.',
+      title: `<h1 class="text-5xl font-black text-center mb-12 tracking-tight bg-gradient-to-r from-red-400 via-white to-blue-400 text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]">3 Rào Cản Lớn</h1>`,
+      columns: [
         {
-            id: 'problem-updated',
-            layout: 'three-column',
-            theme: 'dark',
-            showBadge: false, // Explicitly hide badge
-            narration: 'Để tôi nói thẳng. AI hiện tại có ba vấn đề lớn. Một, nó bắt bạn phải nghĩ trước khi hỏi - cái gọi là "gánh nặng màn hình trắng". Hai, quá nhiều ứng dụng lẻ tẻ, mỗi thứ một nơi, không ai nói chuyện với ai. Và ba, quan trọng nhất - nó quá Tây. Nó không hiểu văn hóa của chúng ta. Digesty ra đời để giải quyết cả ba điều đó.',
-            title: `<h1 class="text-5xl font-black text-center mb-12 tracking-tight bg-gradient-to-r from-red-400 via-white to-blue-400 text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]">3 Rào Cản Lớn</h1>`,
-            columns: [
-                {
-                    icon: '/assets/neon_keyboard.png',
-                    entity: 'AI Chatbot',
-                    title: 'Gánh Nặng "Màn Hình Trắng"',
-                    content: `
+          icon: "/assets/neon_keyboard.png",
+          entity: "AI Chatbot",
+          title: 'Gánh Nặng "Màn Hình Trắng"',
+          content: `
                         <div class="space-y-4">
                             <div class="bg-gray-800/30 p-3 rounded-lg border border-gray-700/50">
                                 <!-- Removed Thực trạng -->
@@ -1057,13 +1064,13 @@ export const digestyIntroVi: DeckContent = {
                             </div>
                         </div>
                     `,
-                    color: 'text-gray-100', // Uniform color
-                },
-                {
-                    icon: '/assets/neon_maze.png',
-                    entity: 'AI Apps Lẻ Tẻ',
-                    title: 'Ma Trận Lựa Chọn',
-                    content: `
+          color: "text-gray-100", // Uniform color
+        },
+        {
+          icon: "/assets/neon_maze.png",
+          entity: "AI Apps Lẻ Tẻ",
+          title: "Ma Trận Lựa Chọn",
+          content: `
                         <div class="space-y-4">
                             <div class="bg-gray-800/30 p-3 rounded-lg border border-gray-700/50">
                                 <!-- Removed Thực trạng -->
@@ -1072,13 +1079,13 @@ export const digestyIntroVi: DeckContent = {
                             </div>
                         </div>
                     `,
-                    color: 'text-gray-100', // Uniform color
-                },
-                {
-                    icon: '/assets/neon_lantern.png',
-                    entity: 'AI "Tây"',
-                    title: 'Khoảng Cách Thấu Cảm',
-                    content: `
+          color: "text-gray-100", // Uniform color
+        },
+        {
+          icon: "/assets/neon_lantern.png",
+          entity: 'AI "Tây"',
+          title: "Khoảng Cách Thấu Cảm",
+          content: `
                         <div class="space-y-4">
                             <div class="bg-gray-800/30 p-3 rounded-lg border border-gray-700/50">
                                 <!-- Removed Thực trạng -->
@@ -1087,13 +1094,13 @@ export const digestyIntroVi: DeckContent = {
                             </div>
                         </div>
                     `,
-                    color: 'text-gray-100', // Uniform color
-                }
-            ],
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          color: "text-gray-100", // Uniform color
+        },
+      ],
+      blocks: [
+        {
+          type: "html",
+          content: `
                         <div class="flex flex-col items-center animate-fade-in-up delay-500">
                             <!-- Connector -->
                             <div class="flex flex-col items-center mb-4 opacity-60">
@@ -1122,30 +1129,31 @@ export const digestyIntroVi: DeckContent = {
                                 </div>
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "reveal",
+      layout: "reveal",
+      theme: "dark",
+      imageUrl: "/assets/digesty_street.jpg",
+      narration: "Và đây là Digesty. Phố AI đầu tiên của người Việt.",
+      title: `<div class="flex flex-col items-center gap-6"><span class="text-2xl md:text-4xl font-light tracking-[0.5em] text-cyan-100/90 uppercase drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">Introducing</span><img src="/assets/digesty-logo-white-trimmed.webp" alt="Digesty" class="w-[80vw] max-w-3xl h-auto drop-shadow-[0_0_35px_rgba(34,211,238,0.5)] animate-pulse" /></div>`,
+      content: "",
+      blocks: [],
+    },
+    {
+      id: "ecosystem",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Hãy tưởng tượng một con phố. Bên này là Phố Giải Trí - nơi bạn có thể hóng hít tin showbiz, xem bói Tarot, hay chụp ảnh nghệ thuật với AI. Bên kia là Phố Tiện Ích - nơi bạn học tiếng Anh, tra cứu thuế, hay tìm hiểu sức khỏe. Tất cả kết nối với nhau. Một tài khoản duy nhất. Và quan trọng nhất - được thiết kế bởi người Việt, cho người Việt.",
+      blocks: [
         {
-            id: 'reveal',
-            layout: 'reveal',
-            theme: 'dark',
-            imageUrl: '/assets/digesty_street.jpg',
-            narration: 'Và đây là Digesty. Phố AI đầu tiên của người Việt.',
-            title: `<div class="flex flex-col items-center gap-6"><span class="text-2xl md:text-4xl font-light tracking-[0.5em] text-cyan-100/90 uppercase drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">Introducing</span><img src="/assets/digesty-logo-white-trimmed.webp" alt="Digesty" class="w-[80vw] max-w-3xl h-auto drop-shadow-[0_0_35px_rgba(34,211,238,0.5)] animate-pulse" /></div>`,
-            content: '',
-            blocks: [],
-        },
-        {
-            id: 'ecosystem',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Hãy tưởng tượng một con phố. Bên này là Phố Giải Trí - nơi bạn có thể hóng hít tin showbiz, xem bói Tarot, hay chụp ảnh nghệ thuật với AI. Bên kia là Phố Tiện Ích - nơi bạn học tiếng Anh, tra cứu thuế, hay tìm hiểu sức khỏe. Tất cả kết nối với nhau. Một tài khoản duy nhất. Và quan trọng nhất - được thiết kế bởi người Việt, cho người Việt.',
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1400px] -mt-8">
                             <!-- Header -->
                             <h2 class="text-4xl md:text-6xl font-black text-center mb-12 uppercase tracking-tight">
@@ -1276,51 +1284,53 @@ export const digestyIntroVi: DeckContent = {
                             </div>
 
                         </div>
-                    `
-                },
-            ],
+                    `,
+        },
+      ],
+    },
+    {
+      id: "product-showcase",
+      layout: "carousel-3d",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Đây không chỉ là ý tưởng. Chúng tôi đã xây dựng nó. Bạn có thể chạm, lướt, và cảm nhận ngay bây giờ.",
+      title: "CHẠM. LƯỚT. VÀ CẢM NHẬN.",
+      carouselItems: [
+        {
+          title: "Digesty Home",
+          desc: "Cửa ngõ vào mọi tiện ích.",
+          icon: "🌐",
+          imageUrl: "/assets/digesty_rewind_showcase.png",
+          color: "bg-cyan-900/80",
         },
         {
-            id: 'product-showcase',
-            layout: 'carousel-3d',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Đây không chỉ là ý tưởng. Chúng tôi đã xây dựng nó. Bạn có thể chạm, lướt, và cảm nhận ngay bây giờ.',
-            title: 'CHẠM. LƯỚT. VÀ CẢM NHẬN.',
-            carouselItems: [
-                {
-                    title: 'Digesty Home',
-                    desc: 'Cửa ngõ vào mọi tiện ích.',
-                    icon: '🌐',
-                    imageUrl: '/assets/digesty_rewind_showcase.png',
-                    color: 'bg-cyan-900/80',
-                },
-                {
-                    title: 'Photo Studio',
-                    desc: 'Ảnh nghệ thuật AI.',
-                    icon: '📸',
-                    imageUrl: '/assets/digesty_avatar_studio.png',
-                    color: 'bg-indigo-900/80',
-                },
-                {
-                    title: 'Tarot Oracle',
-                    desc: 'Giải mã bí ẩn vũ trụ.',
-                    icon: '🔮',
-                    imageUrl: '/assets/digesty_tarot.png',
-                    color: 'bg-purple-900/80',
-                },
-            ],
+          title: "Photo Studio",
+          desc: "Ảnh nghệ thuật AI.",
+          icon: "📸",
+          imageUrl: "/assets/digesty_avatar_studio.png",
+          color: "bg-indigo-900/80",
         },
         {
-            id: 'growth-flywheel',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Có người hỏi tôi: mô hình kinh doanh là gì? Đơn giản thôi. Giải trí thu hút người dùng - vì ai cũng thích vui. Tiện ích giữ chân họ - vì ai cũng cần thiết thực. Ở giữa là một hệ thống nhận diện thống nhất, hiểu bạn ngày càng sâu hơn. Đó là bánh đà của chúng tôi.',
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          title: "Tarot Oracle",
+          desc: "Giải mã bí ẩn vũ trụ.",
+          icon: "🔮",
+          imageUrl: "/assets/digesty_tarot.png",
+          color: "bg-purple-900/80",
+        },
+      ],
+    },
+    {
+      id: "growth-flywheel",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Có người hỏi tôi: mô hình kinh doanh là gì? Đơn giản thôi. Giải trí thu hút người dùng - vì ai cũng thích vui. Tiện ích giữ chân họ - vì ai cũng cần thiết thực. Ở giữa là một hệ thống nhận diện thống nhất, hiểu bạn ngày càng sâu hơn. Đó là bánh đà của chúng tôi.",
+      blocks: [
+        {
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                             <!-- Header -->
                             <h2 class="text-4xl md:text-6xl font-black text-center mb-16 uppercase tracking-tight">
@@ -1397,20 +1407,21 @@ export const digestyIntroVi: DeckContent = {
                                 </p>
                             </div>
                         </div>
-                    `
-                },
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "tech-core",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Nhưng đằng sau giao diện đẹp là công nghệ thực sự. Chúng tôi có kho dữ liệu bản địa - hơn năm triệu bài báo, thư viện pháp luật, và cả những thứ như thơ lục bát, nói lái, teen code. Chúng tôi có hệ thống xử lý riêng - biết ghi nhớ, biết cá nhân hóa. Và chúng tôi có DigestGraph - công nghệ độc quyền biến thông tin thành tri thức trực quan.",
+      blocks: [
         {
-            id: 'tech-core',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Nhưng đằng sau giao diện đẹp là công nghệ thực sự. Chúng tôi có kho dữ liệu bản địa - hơn năm triệu bài báo, thư viện pháp luật, và cả những thứ như thơ lục bát, nói lái, teen code. Chúng tôi có hệ thống xử lý riêng - biết ghi nhớ, biết cá nhân hóa. Và chúng tôi có DigestGraph - công nghệ độc quyền biến thông tin thành tri thức trực quan.',
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                             <h2 class="text-4xl md:text-6xl font-black text-center mb-12 uppercase tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-cyan-200 to-purple-400 drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]">
                                 CÔNG NGHỆ & DỮ LIỆU
@@ -1505,20 +1516,21 @@ export const digestyIntroVi: DeckContent = {
 
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "roadmap-vision",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Lộ trình của chúng tôi rất rõ ràng. Đầu năm hai nghìn hai sáu, ra mắt tại Việt Nam - với mục tiêu trở thành ứng dụng AI quốc dân. Sau đó, mở rộng sang Hàn Quốc, Nhật Bản - những thị trường có văn hóa tương đồng. Và xa hơn nữa - chúng tôi muốn góp phần xây dựng AI có chủ quyền cho Việt Nam. Không phụ thuộc, không bị động.",
+      blocks: [
         {
-            id: 'roadmap-vision',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Lộ trình của chúng tôi rất rõ ràng. Đầu năm hai nghìn hai sáu, ra mắt tại Việt Nam - với mục tiêu trở thành ứng dụng AI quốc dân. Sau đó, mở rộng sang Hàn Quốc, Nhật Bản - những thị trường có văn hóa tương đồng. Và xa hơn nữa - chúng tôi muốn góp phần xây dựng AI có chủ quyền cho Việt Nam. Không phụ thuộc, không bị động.',
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                             <h2 class="text-3xl md:text-5xl font-black text-center mb-16 uppercase tracking-tight">
                                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-blue-400 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
@@ -1577,20 +1589,21 @@ export const digestyIntroVi: DeckContent = {
                                 </p>
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "team-company",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Đội ngũ của chúng tôi đến từ Icetea Labs - một trong những venture studio hàng đầu Đông Nam Á. Hơn hai mươi kỹ sư và chuyên gia, được đào tạo từ Bắc Kinh, Seoul, Monash, Bách Khoa, FPT. Chúng tôi không thiếu năng lực. Điều chúng tôi cần là cơ hội để chứng minh.",
+      blocks: [
         {
-            id: 'team-company',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Đội ngũ của chúng tôi đến từ Icetea Labs - một trong những venture studio hàng đầu Đông Nam Á. Hơn hai mươi kỹ sư và chuyên gia, được đào tạo từ Bắc Kinh, Seoul, Monash, Bách Khoa, FPT. Chúng tôi không thiếu năng lực. Điều chúng tôi cần là cơ hội để chứng minh.',
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1200px] flex flex-col items-center">
                              <!-- Header -->
                             <h2 class="text-3xl md:text-5xl font-black text-center mb-16 uppercase tracking-tight text-white/90">
@@ -1691,20 +1704,21 @@ export const digestyIntroVi: DeckContent = {
 
                             </div>
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
+      ],
+    },
+    {
+      id: "contact",
+      layout: "centered",
+      theme: "dark",
+      showBadge: false,
+      narration:
+        "Nếu bạn tin vào câu chuyện này như tôi, hãy liên hệ. Email hello at digesty chấm vn. Hoặc đơn giản - trải nghiệm thử tại digesty chấm vn. Cảm ơn bạn đã lắng nghe.",
+      blocks: [
         {
-            id: 'contact',
-            layout: 'centered',
-            theme: 'dark',
-            showBadge: false,
-            narration: 'Nếu bạn tin vào câu chuyện này như tôi, hãy liên hệ. Email hello at digesty chấm vn. Hoặc đơn giản - trải nghiệm thử tại digesty chấm vn. Cảm ơn bạn đã lắng nghe.',
-            blocks: [
-                {
-                    type: 'html',
-                    content: `
+          type: "html",
+          content: `
                         <div class="w-full max-w-[1000px] flex flex-col items-center text-center">
 
                             <!-- Main Call to Action -->
@@ -1763,10 +1777,14 @@ export const digestyIntroVi: DeckContent = {
                                 © 2025 Icetea AI & Robotics
                             </div>
 
+                            <button id="submitCourse" class="mt-16 text-sm font-bold text-white tracking-[0.3em] uppercase border border-white/10 px-6 py-2 rounded-full cursor-pointer">
+                                Submit Course
+                            </button>
+
                         </div>
-                    `
-                }
-            ],
+                    `,
         },
-    ],
+      ],
+    },
+  ],
 };
